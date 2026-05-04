@@ -1,9 +1,9 @@
-export default function Card({ titulo, descripcion, imagen, imagenHover }) {
+export default function Card({ nombre, descripcion, imagen, imagenHover }) {
     return (
 
 
 
-        <div className="m-3 max-w-75 max-h-120 bg-white border border-gray-20 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden dark:bg-gray-800 dark:border-gray-700">
+        <div className="mx-3 max-w-75 max-h-120 bg-white border border-gray-20 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden dark:bg-gray-800 dark:border-gray-700">
 
             {/* Imagen superior (Opcional) */}
             <img
@@ -17,7 +17,7 @@ export default function Card({ titulo, descripcion, imagen, imagenHover }) {
 
                 {/* Título */}
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    {titulo}
+                    {nombre}
                 </h5>
 
                 {/* Descripción */}
