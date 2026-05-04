@@ -1,4 +1,4 @@
-export default function Card({ titulo, descripcion, imagen }) {
+export default function Card({ titulo, descripcion, imagen, imagenHover }) {
     return (
 
 
@@ -9,7 +9,7 @@ export default function Card({ titulo, descripcion, imagen }) {
             <img
                 className=" mx-21 w-auto h-auto items-center justify-center object-cover"
                 src={imagen}
-                alt={"Pieza.png"}
+                alt={"WhitePiece.png"}
             />
 
             {/* Contenedor del contenido */}
