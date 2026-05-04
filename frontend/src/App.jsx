@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 import Card from './components/Card'
+import SearchBar from './components/SearchBar'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <SearchBar/>
       {/*Piezas */}
       <div className='flex flex-col min-h-screen items-center justify-center align-center'>
 
@@ -25,7 +27,7 @@ function App() {
       </div>
       {/*Piezas */}
 
-      
+
     </>
   )
 }
