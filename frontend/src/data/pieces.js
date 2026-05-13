@@ -1,5 +1,3 @@
-// src/data/pieces.js
-
 export const TODAS_LAS_PIEZAS = [
     {
         id: 1,

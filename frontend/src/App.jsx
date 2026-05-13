@@ -13,7 +13,7 @@ function App() {
     );
 
     setPiezasMostradas(resultado)
-  })
+  },[state])
 
 
   return (

@@ -1,20 +1,21 @@
-  {
+{
     "dependencies": {
-      "dotenv": "^17.4.2",
-      "express": "^5.2.1",
-      "mysql2": "^3.22.3",
-      "sequelize": "^6.37.8"
+        "cors": "^2.8.6",
+        "dotenv": "^17.4.2",
+        "express": "^5.2.1",
+        "mongoose": "^9.6.2",
+        "mysql2": "^3.22.3"
     },
     "name": "backend",
     "version": "1.0.0",
     "description": "",
     "main": "app.js",
     "scripts": {
-      "dev": "node --watch app.js"
+        "dev": "node --watch app.js"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "type": "module",
     "devDependencies": {}
-  }
+}

@@ -1,17 +1,9 @@
-import { Sequelize } from "sequelize";
-
-export const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, "", {
-    host: process.env.DB_HOST,
-    dialect: process.env.DB_DIALECT
-});
-
+import mongoose from "mongoose"
 export const startDB = async () => {
     try {
-        await sequelize.authenticate(),
-            console.log("Se ha autenticado la DataBase"),
-            await sequelize.sync()
-
+        mongoose.connect('mongodb://127.0.0.1:27017/test');
+        console.log("Se ha conectado la DataBase")
     } catch (error) {
-        error
+        console.log(error)
     }
 };
