@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import { model, Schema } from "mongoose";
 
 export const PieceSchema = new Schema({
     name: {
@@ -12,5 +12,8 @@ export const PieceSchema = new Schema({
     img: {
         type: String,
     },
-
+}, {
+    versionKey: false
 })
+
+export const Piece = model("Pieza", PieceSchema)
